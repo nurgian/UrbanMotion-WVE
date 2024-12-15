@@ -1,0 +1,791 @@
+body {
+  font-family: "Open Sans";
+  background-color: #f9fffc;
+  margin: 0;
+  padding: 0;
+}
+
+.containerHome {
+  display: flex;
+  width: 100%;
+}
+
+/* Button */
+.d-flex {
+  margin-left: 0px !important;
+}
+
+.btn-custom {
+  background-color: #235347;
+  color: #fff !important;
+  border-radius: 50px !important;
+  padding: 7px 30px 7px 30px !important;
+}
+
+.btn-custom:hover {
+  background-color: #122e22;
+  color: #fff;
+}
+
+.btn-outline-custom {
+  border-color: #05181c;
+  border-radius: 50px;
+  color: #05181c;
+  border-width: 2px;
+  padding: 7px 40px 7px 40px;
+}
+
+.btn-outline-custom:hover {
+  background-color: #1b4332;
+}
+
+.btn-secondary .btn-custom {
+  background-color: #f3ecdc;
+  color: #05181c;
+  border-radius: 50px;
+}
+
+.btn-secondary .btn-custom:hover {
+  background-color: #9e9789;
+}
+
+.Hero-H {
+  width: 100%;
+  max-width: 1240px;
+  height: 450px;
+  margin-bottom: 150px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .Hero-H {
+    margin-bottom: 0px;
+  }
+}
+
+/* Content 1 */
+.content-section1sewa {
+  padding: 90px 70px 40px 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-section1sewa .text1 {
+  width: 100%;
+  max-width: 360px;
+}
+
+.content-section1sewa .img-container {
+  gap: 30px !important;
+  padding-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-section1sewa .img-container img {
+  width: 220px;
+  height: 335px;
+  border-radius: 10px;
+}
+
+.content-section1sewa .text1 h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.content-section1sewa .text1 p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.content-section2informasi {
+  padding: 50px 30px 80px 30px;
+}
+
+.content-section2informasi .custom-padding {
+  max-width: 600px !important;
+  width: 100%;
+}
+
+.content-section2informasi .text2 p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.content-section2informasi .text2 h2 {
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+
+.content-section2informasi .text2 {
+  width: 650px;
+  height: auto;
+  padding-left: 0px;
+}
+
+.content-section2informasi .imgc2 {
+  display: flex;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.content-section2informasi .imgc2 img {
+  width: 300px;
+  height: 324px;
+  border-radius: 10px;
+}
+
+.content-section2informasi .imgc2 img:first-child {
+  position: absolute;
+  margin-left: 150px;
+  z-index: 2;
+  border-radius: 25px;
+  width: 320px;
+  height: 344px;
+  border: 10px solid #f5f9f5;
+}
+
+.content-section2informasi .imgc2 img:last-child {
+  position: relative;
+  z-index: 1;
+  margin-top: 90px;
+  border-radius: 10px;
+  width: 320px;
+  height: 344px;
+}
+
+/* C1(768px) */
+@media (max-width: 900px) {
+  .content-section2informasi {
+    justify-content: center;
+    padding: 10px 0px 80px 0px;
+  }
+
+  .content-section1sewa {
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+  }
+
+  .content-section2informasi .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-section1sewa .containerHome {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-section1sewa .text1 h2,
+  .content-section2informasi .text2 h2 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+  }
+
+  .content-section1sewa .text1 p,
+  .content-section2informasi .text2 p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .content-section2informasi .text2 {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .content-section1sewa .text1 {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .content-section1sewa .img-container {
+    justify-content: center;
+    gap: 20px !important;
+    padding-top: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .content-section1sewa .img-container img {
+    width: 220px;
+    height: 335px;
+    border-radius: 10px;
+  }
+
+  .content-section2informasi .imgc2 {
+    justify-content: center;
+  }
+
+  .content-section2informasi .imgc2 img:first-child {
+    width: 280px;
+    height: auto;
+    margin-left: 50px;
+    border: 9px solid #f9fffc;
+    border-radius: 15px;
+  }
+
+  .content-section2informasi .imgc2 img:last-child {
+    width: 280px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 150px;
+  }
+}
+
+/* C1(768px) */
+@media (max-width: 768px) {
+  .content-section2informasi {
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+  }
+
+  .content-section1sewa {
+    padding-top: 150px;
+  }
+
+  .content-section2informasi .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-section1sewa .containerHome {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-section1sewa .text1 h2,
+  .content-section2informasi .text2 h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .content-section1sewa .text1 p,
+  .content-section2informasi .text2 p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .content-section1sewa .text1,
+  .content-section2informasi .text2 {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .content-section1sewa .img-container {
+    justify-content: center;
+    gap: 5px !important;
+    padding-top: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .content-section1sewa .img-container img {
+    width: 170px;
+    height: 235px;
+    border-radius: 10px;
+  }
+
+  .content-section2informasi .imgc2 {
+    justify-content: center;
+  }
+
+  .content-section2informasi .imgc2 img:first-child {
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+    border: 5px solid #f9fffc;
+    border-radius: 15px;
+  }
+
+  .content-section2informasi .imgc2 img:last-child {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 150px;
+  }
+}
+
+/* C1 (480px) */
+@media (max-width: 480px) {
+
+  .content-section1sewa,
+  .content-section2informasi {
+    justify-content: center !important;
+  }
+
+  .btn-custom {
+    margin-bottom: 30px;
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .btn-custom:hover {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .content-section1sewa .text1 h2,
+  .content-section2informasi .text2 h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .content-section1sewa .text1 p,
+  .content-section2informasi .text2 p {
+    font-size: 12px;
+    margin-bottom: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .content-section1sewa .text1,
+  .content-section2informasi .text2 {
+    width: 100%;
+    max-width: 900px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .content-section1sewa .img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5px !important;
+    padding-top: 20px;
+  }
+
+  .content-section1sewa .img-container img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .content-section2informasi .imgc2 img:first-child {
+    width: 150px;
+    height: auto;
+    margin-left: 57px;
+    border: 8px solid #f9fffc;
+  }
+
+  .content-section2informasi .imgc2 img:last-child {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 130px;
+  }
+}
+
+/* (Content 2)Layanan Yang Kami Berikan */
+#my-custom-content2layanan {
+  background-color: #0b2e34;
+  color: #f8f3ed;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my-custom-content2-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.my-custom-content2-text h2 {
+  font-size: 40px;
+}
+
+.my-custom-content2-text p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.my-custom-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Spacing between cards */
+}
+
+.my-custom-card {
+  background-color: #f3ecdc;
+  border-radius: 10px;
+  width: 400px;
+  /* Default width for wider cards */
+  height: 400px;
+  /* Keeping the height consistent */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Space between items */
+  align-items: center;
+  /* Center content horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  /* Ensure padding for content */
+}
+
+.my-custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.my-custom-service-icon {
+  margin-bottom: 20px;
+  /* Increased space below the icon */
+  display: flex;
+  justify-content: center;
+  /* Center the icon */
+  padding-top: 20px;
+}
+
+.my-custom-service-icon-img {
+  width: 80px;
+  /* Increased icon size */
+  height: 80px;
+  /* Increased icon size */
+}
+
+.my-custom-service-title {
+  font-size: 22px;
+  /* Slightly larger title font */
+  color: #05181c;
+  margin: 10px 0;
+  /* Adjust margin for consistency */
+  text-align: center;
+  /* Center title text */
+}
+
+.my-custom-service-description {
+  font-size: 16px;
+  color: #05181c;
+  line-height: 1.5;
+  text-align: center;
+  /* Center description text */
+  margin: 15px 0;
+  /* Added margin for spacing */
+  padding-bottom: 20px;
+}
+
+.my-custom-btn-outline {
+  background-color: transparent;
+  color: #235347;
+  border: 2px solid #235347;
+  padding: 7px 30px 7px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.my-custom-btn-outline:hover {
+  background-color: #235347;
+  color: #fff;
+}
+
+.my-custom-btn-selengkapnya {
+  background-color: #f3ecdc;
+  color: #05181c;
+  border-radius: 50px;
+  padding: 7px 30px 7px 30px;
+  margin-top: 20px;
+}
+
+.my-custom-btn-selengkapnya:hover {
+  background-color: #9c9688;
+  color: #05181c;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .my-custom-card {
+    width: 90%;
+    /* Make cards smaller on medium screens */
+    height: auto;
+    /* Allow height to adjust based on content */
+  }
+
+  .my-custom-content2-text h2 {
+    font-size: 28px;
+    /* Adjust font size */
+  }
+
+  .my-custom-content2-text p {
+    font-size: 14px;
+    /* Adjust font size */
+  }
+
+  .my-custom-content2-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .my-custom-card-container {
+    flex-direction: column;
+    /* Stack cards in a single column */
+    align-items: center;
+    /* Center cards */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .my-custom-card {
+    width: auto;
+    /* Full width for cards */
+    height: auto;
+    /* Allow height to adjust based on content */
+  }
+
+  .my-custom-content2-text h2 {
+    font-size: 24px;
+    /* Further adjust font size */
+  }
+
+  .my-custom-content2-text p {
+    font-size: 14px;
+    /* Further adjust font size */
+  }
+
+  .my-custom-btn-outline {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .my-custom-btn-outline:hover {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .my-custom-btn-selengkapnya {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .my-custom-btn-selengkapnya:hover {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Content 3 ingin perjalanan */
+.content3ingin {
+  background-color: #f5f9f5;
+  padding: 50px 90px;
+}
+
+.content3ingin .rental-card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content3ingin .rental-card-img {
+  width: 100%;
+  height: auto;
+}
+
+.content3ingin .rental-card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content3ingin .rental-card-title {
+  font-size: 35px;
+  font-weight: bold;
+  max-width: 740px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.content3ingin .rental-card-text {
+  font-size: 1rem;
+  max-width: 740px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.content3ingin .rental-card-btn-secondary {
+  margin-top: 30px;
+}
+
+.content3ingin .rental-card-btn-custom {
+  background-color: #f3ecdc;
+  color: #05181c;
+  border-radius: 50px;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.content3ingin .rental-card-btn-custom:hover {
+  background-color: #9e9789;
+  /* Warna latar belakang saat hover */
+  color: #05181c;
+}
+
+@media (max-width: 920px) {
+  .content3ingin {
+    padding: 10px 20px;
+  }
+
+  .content3ingin .rental-card-title {
+    font-size: 24px;
+    padding-bottom: 0px;
+  }
+
+  .content3ingin .rental-card-text {
+    display: none;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content3ingin {
+    max-width: auto;
+  }
+
+  .content3ingin .rental-card-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    max-width: 85%;
+  }
+
+  .content3ingin .rental-card-text {
+    display: none;
+    padding: 0px;
+  }
+
+  .content3ingin .rental-card-btn-secondary {
+    margin-bottom: 40px !important;
+  }
+
+  .content3ingin .rental-card-btn-custom {
+    padding: 5px 25px 5px 20px;
+    font-size: 14px;
+  }
+
+  .rental-card-btn-secondary {
+    padding-top: 0px;
+    margin-top: 8px !important;
+  }
+}
+
+/* (Content 4) Apa yang mereka katakan? */
+.content4apa .cardkomen {
+  background-color: #0b2e34;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  /* Lebar tetap untuk desktop */
+}
+
+.content4apa {
+  background-color: #f5f9f5;
+  padding-bottom: 100px;
+}
+
+.content4apa .containerkomen {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.content4apa h2 {
+  font-size: 35px;
+}
+
+.content4apa .card-title {
+  font-weight: bold;
+}
+
+.content4apa .profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #f5f9f5;
+  object-fit: cover;
+}
+
+.content4apa i {
+  color: #ffb300;
+  padding: 3px 3px 0 0;
+}
+
+/* Media query untuk responsif di bawah 768px */
+
+@media (max-width: 768px) {
+  .content4apa h2 {
+    font-size: 28px;
+  }
+
+  .content4apa .cardkomen {
+    width: 300px;
+  }
+}
+
+/* Media query untuk responsif di bawah 480px */
+@media (max-width: 480px) {
+  .content4apa h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .content4apa .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content4apa .cardkomen {
+    width: auto;
+  }
+
+  .content4apa .card-body {
+    margin-right: 10px !important;
+  }
+
+  .content4apa .text-center {
+    margin-right: 140px !important;
+  }
+
+  .content4apa .profile-image {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,55 @@
+/* General Styling for StatCard */
+.stat-card {
+  background-color: white;
+  /* Gray background with opacity */
+  backdrop-filter: blur(10px);
+  /* Add blur effect to the background */
+  overflow: hidden;
+  box-shadow: var(--shadow-gambar-box-shadow);
+  /* Shadow for depth */
+  border-radius: 1rem;
+  /* Rounded corners */
+  /* border: 1px solid var(--primary-10); */
+  /* Border with slightly lighter gray */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for hover effect */
+}
+
+/* Content Container */
+.stat-card-content {
+
+  padding: 1.25rem;
+  /* Padding for spacing inside the card */
+}
+
+/* Name and Icon Styling */
+.stat-card-name {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  /* Small font size for name */
+  font-weight: 500;
+  /* Medium weight for better visibility */
+  color: var(--primary-10);
+  /* Light gray for text */
+}
+
+/* Value Styling */
+.stat-card-value {
+  margin-top: 0.25rem;
+  /* Margin between name and value */
+  font-size: 1.875rem;
+  /* Large font size for the value */
+  font-weight: 600;
+  /* Bold weight for the value */
+  color: var(--primary-10);
+  /* Light gray for the value text */
+}
+
+/* Hover Effect */
+.stat-card:hover {
+  transform: translateY(-5px);
+  /* Slightly raise the card */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  /* More intense shadow on hover */
+}

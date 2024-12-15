@@ -1,0 +1,136 @@
+.admin-settings {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-settings__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+  .admin-settings__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .admin-settings__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .admin-settings__label {
+    font-size: 16px;
+    font-weight: 500;
+    flex-basis: 30%;
+  }
+  
+  .admin-settings__input-wrapper {
+    flex-basis: 60%;
+  }
+  
+  .admin-settings__input,
+  .admin-settings__textarea {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .admin-settings__textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .admin-settings__upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-settings__upload-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('upload-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .admin-settings__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+  
+  .admin-settings__save-button {
+    padding: 8px 24px;
+    background-color: #235347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .admin-settings__save-button:hover {
+    background-color: #15342c; /* Warna background saat hover */
+  }
+  
+  @media (max-width: 768px) {
+    .admin-settings {
+      padding: 24px;
+    }
+  
+    .admin-settings__row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  
+    .admin-settings__label {
+      flex-basis: auto;
+    }
+  
+    .admin-settings__input-wrapper {
+      flex-basis: auto;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-settings {
+      padding: 16px;
+    }
+  
+    .admin-settings__title {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  
+    .admin-settings__label {
+      font-size: 14px;
+    }
+  
+    .admin-settings__input,
+    .admin-settings__textarea {
+      font-size: 14px;
+    }
+  
+    .admin-settings__upload-button,
+    .admin-settings__save-button {
+      font-size: 14px;
+      padding: 6px 16px;
+    }
+  }

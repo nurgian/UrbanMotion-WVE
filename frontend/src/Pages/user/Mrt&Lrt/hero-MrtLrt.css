@@ -1,0 +1,143 @@
+.hero-overlay-MrtLrt {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+    url(/assets/images/bgheader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 271px 116px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* Menggunakan relative */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.hero-content-MrtLrt {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  width: 1240px;
+  position: relative;
+}
+
+.hero-text-MrtLrt {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 773px;
+}
+
+.hero-text-MrtLrt h1 {
+  color: var(--textcolor-30);
+  /* Text color from :root */
+  font-family: var(--headline-1-bold-55-font-family);
+  font-size: var(--headline-1-bold-55-font-size);
+  line-height: var(--headline-1-bold-55-line-height);
+  font-weight: var(--headline-1-bold-55-font-weight);
+  text-align: left;
+}
+
+.hero-content-MrtLrt .hero-text-MrtLrt p {
+  color: var(--textcolor-30);
+  /* Text color from :root */
+  font-family: var(--paragraf-2-reguler-18-font-family,
+      "OpenSans-Regular",
+      sans-serif);
+  font-size: var(--paragraf-2-reguler-18-font-size, 18px);
+  line-height: var(--paragraf-2-reguler-18-line-height, 32px);
+  font-weight: var(--paragraf-2-reguler-18-font-weight, 400);
+  flex: 1;
+}
+
+/* Responsive untuk 768px */
+@media (max-width: 768px) {
+  .hero-overlay-MrtLrt {
+    padding: 200px 50px;
+    /* Kurangi padding */
+    background-position: center;
+    gap: 1.5rem;
+    /* Kurangi jarak antar elemen */
+    z-index: 10;
+  }
+
+  .hero-content-MrtLrt {
+    flex-direction: column;
+    /* Susun elemen secara vertikal */
+    gap: 30px;
+    /* Kurangi jarak antar elemen */
+    width: 100%;
+    /* Sesuaikan lebar */
+  }
+
+  .hero-text-MrtLrt {
+    width: 100%;
+    /* Full width */
+  }
+
+  .hero-text-MrtLrt h1 {
+    font-size: 36px;
+    /* Kurangi ukuran font */
+    line-height: 46px;
+    /* Kurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .hero-content-MrtLrt .hero-text-MrtLrt p {
+    font-size: 16px;
+    /* Kurangi ukuran font */
+    line-height: 28px;
+    /* Kurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+}
+
+/* Responsive untuk 480px */
+@media (max-width: 480px) {
+  .hero-overlay-MrtLrt {
+    padding: 150px 20px;
+    /* Padding lebih kecil */
+    gap: 1rem;
+    /* Kurangi jarak antar elemen */
+    z-index: 10;
+  }
+
+  .hero-content-MrtLrt {
+    gap: 20px;
+    /* Kurangi jarak antar elemen */
+    width: 100%;
+    /* Full width */
+  }
+
+  .hero-text-MrtLrt {
+    gap: 15px;
+    /* Kurangi jarak antar teks */
+  }
+
+  .hero-text-MrtLrt h1 {
+    font-size: 28px;
+    /* Ukuran font lebih kecil */
+    line-height: 38px;
+    /* Line-height lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .hero-content-MrtLrt .hero-text-MrtLrt p {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Line-height lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+}

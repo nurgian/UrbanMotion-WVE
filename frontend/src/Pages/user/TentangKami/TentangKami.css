@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* * {
+  border: 2px solid red;
+} */
+
+.Hero-TK {
+  width: 100%;
+  max-width: 1240px;
+  height: 450px;
+  margin-bottom: 150px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Layout Utama */
+.services-tentangkami {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.container-tentangkami {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.images-tentangkami {
+  flex: 0 0 auto;
+  margin-right: 2rem;
+}
+
+.images-tentangkami img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-tentangkami {
+  flex: 1;
+  text-align: center;
+}
+
+.content-tentangkami h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #05181c;
+  margin-top: 70px;
+}
+
+.content-tentangkami p {
+  font-size: 19.7px;
+  text-align: justify;
+  color: #05181c;
+}
+
+.content-page4-tentangkami {
+  display: flex;
+  align-items: center;
+  /* Vertikal tengah */
+  gap: 2rem;
+  /* Jarak antara gambar dan teks */
+}
+
+.page4-tentangkami {
+  flex: 1;
+  /* Menjadikan elemen fleksibel */
+}
+
+.page4-tentangkami img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Opsional */
+}
+
+.kalimat-tentangkami {
+  flex: 1;
+  /* Menjadikan teks fleksibel */
+  text-align: justify;
+}
+
+.petikatas-tentangkami,
+.petikbawah-tentangkami {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* .page4-tentangkami img{
+  align-items : center ;
+  justify-content: center;
+} */
+
+
+@media (max-width: 1400px) {
+  .Hero-TK {
+    margin-bottom: 150px;
+  }
+}
+
+/* Responsif untuk Tablet (Lebar Maksimal 992px) */
+@media (max-width: 1100px) {
+  .tentangkami {
+    width: auto;
+  }
+
+  .Hero-TK {
+    margin-bottom: 150px;
+  }
+
+  .services-tentangkami {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .container-tentangkami {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .images-tentangkami {
+    margin: 0 auto 20px;
+  }
+
+  .images-tentangkami img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .content-tentangkami {
+    text-align: center;
+  }
+
+  .content-tentangkami h2 {
+    font-size: 26px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .content-tentangkami p {
+    font-size: 18px;
+  }
+}
+
+/* Features Section */
+.features-tentangkami {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.title-tentangkami {
+  font-size: 40px;
+  font-weight: bold;
+  color: #05181c;
+  margin-bottom: 24px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.grid-tentangkami {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+
+.cardtentangkami {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  /* Sesuaikan lebar agar lebih fleksibel */
+  max-width: 350px;
+  /* Set batas maksimum lebar */
+  box-sizing: border-box;
+  /* Agar padding masuk dalam perhitungan lebar */
+}
+
+.card-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Responsif untuk Tablet (Lebar Maksimal 1200px) */
+@media (max-width: 1200px) {
+  .title-tentangkami {
+    font-size: 32px;
+  }
+
+  .cardtentangkami {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .cardtentangkami img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-title {
+    font-size: 1.15em;
+  }
+
+  .card-text {
+    font-size: 0.95em;
+  }
+
+  .features-tentangkami .grid-tentangkami {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    /* Mengurangi kolom menjadi 2 */
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero-TK {
+    margin-bottom: 150px;
+  }
+}
+
+.Tujuan-tentangkami {
+  padding: 2rem;
+  background-color: #0b2e34;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+.tujuankami-tentangkami,
+.subtitle-tentangkami,
+.description-tentangkami {
+  font-size: 1.125rem;
+  color: #f8f3ed;
+  margin: 0 50px;
+}
+
+.subtitle-tentangkami {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.box-tentangkami {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box-title-tentangkami {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #05181c;
+}
+
+.box-content-tentangkami {
+  margin-top: 1rem;
+}
+
+.mission-item-tentangkami {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mission-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #05181c;
+  margin-right: 1rem;
+}
+
+.mission-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #05181c;
+}
+
+.mission-description {
+  color: #6e6e6e;
+}
+
+.box-description-tentangkami {
+  color: #6e6e6e;
+}
+
+/* Jasa Section */
+.jasa-tentangkami {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  /* Agar elemen turun jika ruang tidak cukup */
+}
+
+.page4-tentangkami {
+  margin-right: 2rem;
+}
+
+.page4-tentangkami img {
+  margin-left: 20px;
+  width: 600px;
+  height: 500px;
+  /* Memastikan gambar tetap proporsional */
+}
+
+.petikatas-tentangkami {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.petikbawah-tentangkami {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+.petikatas-tentangkami img,
+.petikbawah-tentangkami img {
+  width: 50px;
+  height: 40px;
+}
+
+.kalimat-tentangkami {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+}
+
+.kalimat-tentangkami p {
+  font-size: 19.7px;
+  text-align: center;
+  color: #05181c;
+  margin: 2rem 0;
+}
+
+/* Responsif untuk layar <= 960px */
+@media (max-width: 960px) {
+  .jasa-tentangkami {
+    display: flex;
+    flex-direction: column !important;
+    /* Stack the elements vertically */
+    align-items: center !important;
+    /* Center the items */
+  }
+
+  .content-page4-tentangkami {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  .page4-tentangkami {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 1rem;
+    /* Provide space between image and text */
+  }
+
+  .page4-tentangkami img {
+    width: 100%;
+    /* Ensure image stretches to full width */
+    height: auto;
+    margin-bottom: 1rem;
+    /* Space between image and text */
+  }
+
+  .kalimat-tentangkami {
+    text-align: center;
+    margin-top: -30px;
+    padding: 1rem;
+    width: 100%;
+    /* Ensure the text block stretches across the full width */
+    position: relative;
+  }
+
+  .kalimat-tentangkami p {
+    font-size: 18px;
+    /* Adjust font size for smaller screens */
+    padding: 1rem;
+  }
+
+  /* Petik atas dan petik bawah perbaikan */
+  .petikatas-tentangkami,
+  .petikbawah-tentangkami {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+  }
+
+  .petikatas-tentangkami {
+    top: -10px;
+    left: -10px;
+  }
+
+  .petikbawah-tentangkami {
+    bottom: -10px;
+    right: -10px;
+  }
+
+  .petikatas-tentangkami img,
+  .petikbawah-tentangkami img {
+    width: 100%;
+    height: 100%;
+  }
+}

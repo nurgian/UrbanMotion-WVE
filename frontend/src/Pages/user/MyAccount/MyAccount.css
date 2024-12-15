@@ -1,0 +1,33 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+
+/* My Account */
+.myaccount-profil {
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+ justify-content: center;
+ justify-items: center;
+}
+
+.content-acc {
+ display: flex;
+ flex-wrap: nowrap;
+ gap: 50px;
+}
+
+@media (max-width: 700px) {
+ .content-acc {
+   justify-content: center !important;
+   align-items: center !important;
+   padding: 15px;
+   flex-direction: column;
+ }
+
+ .myaccount-profil {
+   padding-top: 20px;
+ }
+}

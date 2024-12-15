@@ -1,0 +1,84 @@
+/* Map Widget */
+.map-widget {
+  border-radius: 35px;
+  /* border: 2px solid var(--primary-10); */
+  width: 100%;
+  /* Menyesuaikan lebar widget dengan kontainer */
+  max-width: 1205px;
+  /* Batasi lebar widget maksimal */
+  height: 300px;
+  /* Tinggi tetap untuk menjaga proporsi */
+  position: relative;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: 0 auto;
+  /* Pusatkan widget */
+}
+
+/* Map Image */
+.map-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+/* View on Map Button */
+.view-on-map-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.view-on-map-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Query untuk ukuran layar 768px (Tablet) */
+@media (max-width: 768px) {
+  .map-widget {
+    height: 250px;
+    /* Menurunkan tinggi widget pada layar tablet */
+    width: 550px;
+    /* Gunakan lebar penuh pada layar tablet */
+
+  }
+
+  .view-on-map-button {
+    font-size: 16px;
+    /* Menyesuaikan ukuran font untuk layar tablet */
+    padding: 8px 16px;
+    /* Sesuaikan padding pada tombol */
+  }
+}
+
+/* Media Query untuk ukuran layar 480px (Mobile) */
+@media (max-width: 480px) {
+  .map-widget {
+    height: 200px;
+    /* Menurunkan tinggi widget pada layar ponsel */
+    width: 100%;
+    /* Gunakan lebar penuh pada layar ponsel */
+    max-width: 100%;
+    /* Pastikan widget tidak melebihi lebar layar */
+  }
+
+  .view-on-map-button {
+    font-size: 14px;
+    /* Menyesuaikan ukuran font pada ponsel */
+    padding: 6px 12px;
+    /* Sesuaikan padding pada tombol */
+  }
+}

@@ -1,0 +1,78 @@
+/* General Layout for Dashboard */
+.dashboard-container {
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  z-index: 10;
+  margin: 0;
+}
+
+.dashboard-main-content {
+  background-color: #F5F6FA;
+
+  max-width: 1200px;
+  margin: 0;
+  padding: 24px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Charts container */
+.charts-container {
+  justify-content: center;
+  align-items: center;
+
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+}
+
+@media (min-width: 1024px) {
+  .charts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styling for the StatCard Component */
+.statcard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statcard .icon {
+  font-size: 2rem;
+  color: var(--icon-color);
+}
+
+.statcard .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.statcard .name {
+  font-size: 1rem;
+  color: var(--text-color);
+}

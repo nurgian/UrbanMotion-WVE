@@ -1,0 +1,82 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --primary-10: #0b2e34;
+  --primary-20: #265447;
+  --secondary-30: #f3ecdc;
+  --secondary-40: #f9fffc;
+  --textcolor-10: #05181c;
+  --textcolor-30: #f8f3ed;
+  --textcolor-50: #6e6e6e;
+  --textcolor-70: #f6f6f6;
+  --iconcolor-10: #235347;
+  --iconcolor-20: #f8f3ed;
+  --button-10: #235347;
+  --button-20: #f3ecdc;
+  --background-10: #f9fffc;
+  --lofi-primary-50: #687585;
+  --lofi-primary-40: #aab5c3;
+  --lofi-secondary-30: #ced7e4;
+  --lofi-secondary-20: #f5f5f5;
+  --lofi-secondary-10: #ffffff;
+
+  /* Fonts */
+  --ulasan-font-family: OpenSans-SemiBoldItalic, sans-serif;
+  --ulasan-font-size: 22px;
+  --ulasan-line-height: 29px;
+  --ulasan-font-weight: 600;
+  --ulasan-font-style: italic;
+  --headline-1-bold-55-font-family: OpenSans-Bold, sans-serif;
+  --headline-1-bold-55-font-size: 55px;
+  --headline-1-bold-55-line-height: 70px;
+  --headline-1-bold-55-font-weight: 700;
+  --headline-1-bold-55-font-style: normal;
+  --headline-2-bold-35-font-family: OpenSans-Bold, sans-serif;
+  --headline-2-bold-35-font-size: 40px;
+  --headline-2-bold-35-line-height: 54px;
+  --headline-2-bold-35-font-weight: 700;
+  --headline-2-bold-35-font-style: normal;
+  --headline-3-reguler-25-font-family: OpenSans-SemiBold, sans-serif;
+  --headline-3-reguler-25-font-size: 25px;
+  --headline-3-reguler-25-line-height: 26px;
+  --headline-3-reguler-25-font-weight: 600;
+  --headline-3-reguler-25-font-style: normal;
+  --title-1-bold-24-font-family: OpenSans-Bold, sans-serif;
+  --title-1-bold-24-font-size: 24px;
+  --title-1-bold-24-line-height: 40px;
+  --title-1-bold-24-font-weight: 700;
+  --title-1-bold-24-font-style: normal;
+  --paragraf-1-reguler-20-font-family: OpenSans-Regular, sans-serif;
+  --paragraf-1-reguler-20-font-size: 20px;
+  --paragraf-1-reguler-20-line-height: 40px;
+  --paragraf-1-reguler-20-font-weight: 400;
+  --paragraf-1-reguler-20-font-style: normal;
+  --paragraf-2-reguler-18-font-family: OpenSans-Regular, sans-serif;
+  --paragraf-2-reguler-18-font-size: 18px;
+  --paragraf-2-reguler-18-line-height: 32px;
+  --paragraf-2-reguler-18-font-weight: 400;
+  --paragraf-2-reguler-18-font-style: normal;
+  --paragraf-3-reguler-16-font-family: OpenSans-Regular, sans-serif;
+  --paragraf-3-reguler-16-font-size: 16px;
+  --paragraf-3-reguler-16-line-height: 26px;
+  --paragraf-3-reguler-16-font-weight: 400;
+  --paragraf-3-reguler-16-font-style: normal;
+  --content-1-reguler-14-font-family: OpenSans-Regular, sans-serif;
+  --content-1-reguler-14-font-size: 14px;
+  --content-1-reguler-14-line-height: 26px;
+  --content-1-reguler-14-font-weight: 400;
+  --content-1-reguler-14-font-style: normal;
+  --content-2-bold-font-family: OpenSans-Bold, sans-serif;
+  --content-2-bold-font-size: 14px;
+  --content-2-bold-line-height: 20px;
+  --content-2-bold-font-weight: 700;
+  --content-2-bold-font-style: normal;
+  --navbar-1-semibold-16-font-family: OpenSans-SemiBold, sans-serif;
+  --navbar-1-semibold-16-font-size: 16px;
+  --navbar-1-semibold-16-line-height: 24px;
+  --navbar-1-semibold-16-font-weight: 600;
+  --navbar-1-semibold-16-font-style: normal;
+
+  /* Effects */
+  --shadow-gambar-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,36 @@
+ .headerAdmin-container {
+   background-color: var(--primary-10);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border-bottom: 1px solid var(--primary-20);
+ }
+
+ .headerAdmin-content {
+   background-color: var(--primary-10);
+   border-radius: 2%;
+   max-width: 1120px;
+   margin: 0 auto;
+   padding: 16px 16px;
+ }
+
+ @media (min-width: 640px) {
+   .headerAdmin-content {
+     padding-left: 24px;
+     padding-right: 24px;
+   }
+ }
+
+ @media (min-width: 1024px) {
+   .headerAdmin-content {
+     padding-left: 32px;
+     padding-right: 32px;
+   }
+ }
+
+ .headerAdmin-title {
+   --headline-3-reguler-25-font-size: 25px;
+   --headline-3-reguler-25-line-height: 26px;
+   --headline-3-reguler-25-font-weight: 600;
+   --headline-3-reguler-25-font-style: normal;
+   color: var(--textcolor-30);
+ }

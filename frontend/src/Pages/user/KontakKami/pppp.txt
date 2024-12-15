@@ -1,0 +1,146 @@
+
+/* Responsif untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+  .form-KontakKami {
+    padding: 15px; /* Mengurangi padding */
+    max-width: 90%; /* Lebar maksimal 90% */
+  }
+
+  .header-title-form-KontakKami {
+    font-size: 24px; /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    line-height: 24px; /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column; /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%; /* Pastikan field mengisi lebar penuh */
+  }
+
+  .submit-button-KontakKami {
+    padding: 12px 20px; /* Mengurangi padding pada tombol */
+    font-size: 14px; /* Ukuran font lebih kecil */
+  }
+}
+
+/* Responsif untuk layar dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+  .form-KontakKami {
+    padding: 10px; /* Mengurangi padding */
+    max-width: 95%; /* Lebar maksimal 95% */
+  }
+
+  .header-title-form-KontakKami {
+    font-size: 20px; /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 14px; /* Ukuran font lebih kecil */
+    line-height: 20px; /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column; /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%; /* Pastikan field mengisi lebar penuh */
+  }
+
+  .input-field-message-KontakKami {
+    min-height: 80px; /* Mengurangi tinggi minimum textarea */
+  }
+
+  .submit-button-KontakKami {
+    padding: 10px 15px; /* Mengurangi padding pada tombol */
+    font-size: 12px; /* Ukuran font lebih kecil */
+  }
+}
+
+
+
+
+/* Responsive untuk 768px */
+@media (max-width: 768px) {
+  .contact-info-KontakKami {
+    padding: 15px; /* Mengurangi padding */
+    gap: 15px; /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 14px; /* Mengurangi ukuran font */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 32px; /* Mengurangi ukuran font */
+    line-height: 40px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 16px; /* Mengurangi ukuran font */
+    line-height: 24px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    gap: 8px; /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 18px; /* Mengurangi ukuran font */
+    line-height: 28px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+}
+
+/* Responsive untuk 480px */
+@media (max-width: 480px) {
+  .contact-info-KontakKami {
+    padding: 10px; /* Mengurangi padding */
+    gap: 10px; /* Mengurangi jarak antar elemen */
+    flex-direction: column; /* Susun elemen secara vertikal */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 12px; /* Ukuran font lebih kecil */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 24px; /* Ukuran font lebih kecil */
+    line-height: 32px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 14px; /* Ukuran font lebih kecil */
+    line-height: 20px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    flex-direction: column; /* Susun ikon dan teks secara vertikal */
+    align-items: center; /* Pusatkan konten */
+    gap: 5px; /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    line-height: 24px; /* Mengurangi line-height */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami i {
+    font-size: 16px; /* Ukuran ikon lebih kecil */
+    margin-right: 5px; /* Jarak ikon lebih kecil */
+  }
+}
+

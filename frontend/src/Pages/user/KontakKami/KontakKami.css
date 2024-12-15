@@ -1,0 +1,196 @@
+/* Global Box Sizing */
+
+/* Kontainer utama */
+.content-KontakKami {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 60px
+}
+
+.main-frame-KontakKami {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  /* Center secara horisontal */
+}
+
+.Heros-KontakKami {
+  width: 1240px;
+  height: 400px;
+  z-index: 0;
+}
+
+/* Kontainer untuk Card */
+.card-content-KontakKami {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  /* Pusatkan kedua panel secara horisontal */
+  gap: 30px;
+  flex-wrap: wrap;
+  /* Responsif - memungkinkan elemen menumpuk pada ukuran layar kecil */
+  width: 100%;
+}
+
+/* Panel Kanan (Informasi Kontak) */
+.right-panel-KontakKami {
+  background: var(--primary-10);
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 748px;
+  position: relative;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.29);
+  flex: 1 1 48%;
+  /* Panel kanan mengambil 48% dari lebar container */
+  max-width: 600px;
+  /* Batasi lebar panel kanan */
+}
+
+/* Left Panel (Formulir Kontak) */
+.left-panel-KontakKami {
+  background: var(--background-10);
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 748px;
+  position: relative;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.29);
+  flex: 1 1 48%;
+  /* Panel kiri mengambil 48% dari lebar container */
+  max-width: 600px;
+  /* Batasi lebar panel kiri */
+}
+
+.MapWidget-KontakKami {
+  width: 100%;
+  /* Pastikan lebar 100% */
+}
+
+/* Efek hover pada panel kanan */
+.right-panel-KontakKami:hover {
+  background-color: #ffffff;
+  /* Latar belakang menjadi putih */
+  color: var(--primary-10);
+  /* Teks menjadi warna gelap primary */
+}
+
+/* Efek hover pada setiap item kontak di dalam panel kanan */
+.right-panel-KontakKami:hover .contact-info-item {
+  background-color: #ffffff;
+  /* Latar belakang item kontak menjadi putih */
+  color: var(--primary-10);
+  /* Teks item kontak menjadi warna gelap primary */
+}
+
+/* Efek hover pada label di dalam contact-info-item */
+.right-panel-KontakKami:hover .contact-info-item-KontakKami .label-KontakKami {
+  color: var(--primary-10);
+  /* Warna label menjadi gelap primary */
+}
+
+/* Efek hover pada paragraf di dalam contact-info-item */
+.right-panel-KontakKami:hover .contact-info-item-KontakKami p {
+  color: var(--primary-10);
+  /* Warna teks paragraf menjadi gelap primary */
+}
+
+/* Efek hover pada ikon di dalam contact-info-item */
+.right-panel-KontakKami:hover .contact-info-item-KontakKami .label-KontakKami i {
+  color: var(--primary-10);
+  /* Ikon menjadi warna gelap primary */
+}
+
+.right-panel-KontakKami:hover .contact-info-title-KontakKami {
+  color: var(--primary-10);
+  /* Ikon menjadi warna gelap primary */
+}
+
+/* Efek hover pada judul header di dalam panel kanan */
+.right-panel-KontakKami:hover .contact-header-title-KontakKami {
+  color: var(--primary-10);
+  /* Warna header-title menjadi gelap primary */
+}
+
+/* Efek hover pada subtitle di dalam panel kanan */
+.right-panel-KontakKami:hover .contact-subtitle-KontakKami p {
+  color: var(--primary-10) !important;
+  /* Warna subtitle menjadi gelap primary */
+}
+
+
+/* Media Query untuk ukuran layar 768px dan lebih kecil */
+@media (max-width: 768px) {
+  .Heros-KontakKami {
+    width: 100%;
+    height: auto;
+    margin-bottom: 900px;
+  }
+
+  .content-KontakKami {
+    margin: 50px;
+    /* Kurangi margin agar tidak terlalu lebar */
+  }
+
+  .card-content-KontakKami {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .right-panel-KontakKami,
+  .left-panel-KontakKami {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Media Query untuk ukuran layar 480px dan lebih kecil */
+@media (max-width: 480px) {
+  .Heros-KontakKami {
+    margin-bottom: 800px;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .content-KontakKami {
+    margin: 20px;
+  }
+
+  .card-content-KontakKami {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .right-panel-KontakKami,
+  .left-panel-KontakKami {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,52 @@
+/* Container styling */
+.sales-overview-container {
+  background-color: white;
+  /* White background */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /* Light shadow for depth */
+  border: 1px solid var(--secondary-30);
+  /* Border with secondary color */
+  border-radius: 16px;
+  /* Rounded corners */
+  padding: 1.5rem;
+  /* Inner spacing */
+  margin-bottom: 2rem;
+  /* Space below the card */
+}
+
+/* Header styling */
+.sales-overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.sales-overview-title {
+  font-size: 1.25rem;
+  /* Large font size */
+  font-weight: 600;
+  /* Semi-bold font */
+}
+
+/* Dropdown styling */
+.sales-overview-select {
+  background-color: var(--secondary-30);
+  color: var(--primary-10);
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.sales-overview-select:focus {
+  box-shadow: 0 0 0 3px var(--primary-10);
+}
+
+/* Chart container */
+.sales-overview-chart {
+  width: 100%;
+  height: 320px;
+}

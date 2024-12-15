@@ -1,0 +1,439 @@
+.contact-info-KontakKami {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info-title-KontakKami {
+  color: var(--textcolor-30, #f8f3ed);
+  text-align: left;
+  font-family: var(--accent-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--accent-font-size, 15px);
+  letter-spacing: var(--accent-letter-spacing, 0.15em);
+  font-weight: var(--accent-font-weight, 600);
+  text-transform: uppercase;
+}
+
+.contact-header-title-KontakKami {
+  color: var(--textcolor-30, #f8f3ed);
+  text-align: left;
+  font-family: var(
+    --headline-2-bold-35-font-family,
+    "OpenSans-Bold",
+    sans-serif
+  );
+  font-size: var(--headline-2-bold-35-font-size, 40px);
+  line-height: var(--headline-2-bold-35-line-height, 54px);
+  font-weight: var(--headline-2-bold-35-font-weight, 700);
+  position: relative;
+  flex: 1;
+}
+
+.contact-subtitle-KontakKami p {
+  color: var(--textcolor-30, #f8f3ed) !important;
+  text-align: left;
+  font-family: var(
+    --paragraf-2-reguler-18-font-family,
+    "OpenSans-Regular",
+    sans-serif
+  );
+  font-size: var(--paragraf-2-reguler-18-font-size, 18px);
+  line-height: var(--paragraf-2-reguler-18-line-height, 32px);
+  font-weight: var(--paragraf-2-reguler-18-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+
+.icon-box-KontakKami {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info-item-KontakKami {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-info-item-KontakKami .label-KontakKami {
+  color: var(--textcolor-30, #f8f3ed);
+  text-align: left;
+  font-family: var(--title-1-bold-24-font-family, "OpenSans-Bold", sans-serif);
+  font-size: var(--title-1-bold-24-font-size, 24px);
+  line-height: var(--title-1-bold-24-line-height, 40px);
+  font-weight: var(--title-1-bold-24-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+
+.contact-info-item-KontakKami p:nth-child(2) {
+  color: var(--textcolor-30, #f8f3ed);
+  text-align: left;
+  font-family: var(--paragraf-2-reguler-18-font-family);
+  font-size: var(--paragraf-2-reguler-18-font-size, 18px);
+  line-height: var(--paragraf-2-reguler-18-line-height, 32px);
+  font-weight: var(--paragraf-2-reguler-18-font-weight, 400);
+}
+
+.icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami i {
+  margin-right: 10px;
+  /* Memberi jarak antara ikon dan teks */
+  color: var(--iconcolor-20);
+  /* Mengatur warna ikon */
+  font-size: 20px;
+  /* Ukuran ikon */
+}
+
+/* Responsive untuk 768px */
+@media (max-width: 768px) {
+  .contact-info-KontakKami {
+    gap: 15px;
+    /* Kurangi jarak antar elemen */
+    padding: 15px;
+    /* Kurangi padding */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 14px;
+    /* Kurangi ukuran font */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 32px;
+    /* Kurangi ukuran font */
+    line-height: 44px;
+    /* Kurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 16px;
+    /* Kurangi ukuran font */
+    line-height: 28px;
+    /* Kurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    gap: 8px;
+    /* Kurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 20px;
+    /* Kurangi ukuran font */
+    line-height: 32px;
+    /* Kurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+}
+
+/* Responsive untuk 480px */
+@media (max-width: 480px) {
+  .contact-info-KontakKami {
+    gap: 10px;
+    /* Kurangi lebih jauh jarak antar elemen */
+    padding: 10px;
+    /* Padding lebih kecil */
+    flex-direction: column;
+    /* Susun elemen secara vertikal */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 12px;
+    /* Ukuran font lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 24px;
+    /* Ukuran font lebih kecil */
+    line-height: 36px;
+    /* Line-height lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Line-height lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    flex-direction: column;
+    /* Susun ikon dan teks secara vertikal */
+    align-items: center;
+    /* Pusatkan konten */
+    gap: 5px;
+    /* Kurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 18px;
+    /* Ukuran font lebih kecil */
+    line-height: 28px;
+    /* Line-height lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami i {
+    font-size: 18px;
+    /* Ukuran ikon lebih kecil */
+    margin-right: 5px;
+    /* Jarak ikon lebih kecil */
+  }
+}
+
+/* Responsive untuk 768px */
+@media (max-width: 768px) {
+  .contact-info-KontakKami {
+    padding: 15px;
+    /* Mengurangi padding */
+    gap: 15px;
+    /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 14px;
+    /* Mengurangi ukuran font */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 32px;
+    /* Mengurangi ukuran font */
+    line-height: 40px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 16px;
+    /* Mengurangi ukuran font */
+    line-height: 24px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    gap: 8px;
+    /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 18px;
+    /* Mengurangi ukuran font */
+    line-height: 28px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+}
+
+/* Responsive untuk 480px */
+@media (max-width: 480px) {
+  .contact-info-KontakKami {
+    padding: 10px;
+    /* Mengurangi padding */
+    gap: 10px;
+    /* Mengurangi jarak antar elemen */
+    flex-direction: column;
+    /* Susun elemen secara vertikal */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 12px;
+    /* Ukuran font lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 24px;
+    /* Ukuran font lebih kecil */
+    line-height: 32px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+    line-height: 20px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    flex-direction: column;
+    /* Susun ikon dan teks secara vertikal */
+    align-items: center;
+    /* Pusatkan konten */
+    gap: 5px;
+    /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 16px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami i {
+    font-size: 16px;
+    /* Ukuran ikon lebih kecil */
+    margin-right: 5px;
+    /* Jarak ikon lebih kecil */
+  }
+}
+
+/* Responsive untuk 768px */
+@media (max-width: 768px) {
+  .contact-info-KontakKami {
+    max-width: 90%;
+    margin: 0 auto;
+    /* Menjaga agar form berada di tengah horisontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Memastikan isi form terpusat secara horisontal */
+    justify-content: center;
+    /* Memastikan isi form terpusat secara vertikal */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 14px;
+    /* Mengurangi ukuran font */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 32px;
+    /* Mengurangi ukuran font */
+    line-height: 40px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 16px;
+    /* Mengurangi ukuran font */
+    line-height: 24px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    gap: 8px;
+    /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 18px;
+    /* Mengurangi ukuran font */
+    line-height: 28px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+}
+
+/* Responsive untuk 480px */
+@media (max-width: 480px) {
+  .contact-info-KontakKami {
+    margin: 0;
+    padding: 0px;
+    /* Mengurangi padding */
+    gap: 0px;
+    /* Mengurangi jarak antar elemen */
+    flex-direction: column;
+    /* Susun elemen secara vertikal */
+  }
+
+  .contact-info-title-KontakKami {
+    font-size: 10px;
+    /* Ukuran font lebih kecil */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-header-title-KontakKami {
+    font-size: 20px;
+    /* Ukuran font lebih kecil */
+    line-height: 32px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .contact-subtitle-KontakKami p {
+    font-size: 10px;
+    /* Ukuran font lebih kecil */
+    line-height: 20px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami {
+    flex-direction: column;
+    /* Susun ikon dan teks secara vertikal */
+    align-items: center;
+    /* Pusatkan konten */
+    gap: 5px;
+    /* Mengurangi jarak antar elemen */
+  }
+
+  .contact-info-item-KontakKami .label-KontakKami {
+    font-size: 10px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Mengurangi line-height */
+    text-align: center;
+    /* Pusatkan teks */
+  }
+
+  .icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami i {
+    font-size: 8px;
+    /* Ukuran ikon lebih kecil */
+    margin-right: 5px;
+    /* Jarak ikon lebih kecil */
+  }
+
+  .icon-box-KontakKami .contact-info-item-KontakKami .label-KontakKami p {
+    font-size: 8px;
+    /* Ukuran ikon lebih kecil */
+    margin-right: 5px;
+    /* Jarak ikon lebih kecil */
+  }
+
+  .contact-info-item-KontakKami p:nth-of-type(2) {
+    font-size: 8px;
+    /* Example color */
+  }
+}

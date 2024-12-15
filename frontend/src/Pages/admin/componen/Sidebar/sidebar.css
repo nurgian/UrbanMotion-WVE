@@ -1,0 +1,184 @@
+.sidebar-container {
+  position: sticky;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.sidebar-open {
+  width: 256px;
+}
+
+.sidebar-closed {
+  width: 80px;
+}
+
+.sidebar-content {
+  height: 100%;
+  background-color: var(--primary-10);
+  backdrop-filter: blur(8px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--secondary-30);
+}
+
+.sidebar-toggle-button {
+  font-size: var(--navbar-1-semibold-16-font-size);
+  font-family: var(--navbar-1-semibold-16-font-family);
+  font-weight: var(--navbar-1-semibold-16-font-weight);
+  color: var(--secondary-30);
+  padding: 10px;
+  border-radius: 9999px;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.sidebar-logo {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.sidebar-logo img {
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+
+.sidebar-toggle-button:hover {
+  background-color: var(--primary-20);
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: var(--navbar-1-semibold-16-font-size);
+  font-family: var(--navbar-1-semibold-16-font-family);
+  font-weight: var(--navbar-1-semibold-16-font-weight);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  margin-bottom: 8px;
+  color: var(--textcolor-30);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar-menu-item:hover {
+  background-color: var(--primary-20);
+}
+
+.sidebar-menu-icon {
+  min-width: 20px;
+  color: var(--textcolor-30);
+}
+
+.sidebar-menu-text {
+  margin-left: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-menu-item:nth-child(3) {
+  /* Target the 3rd item, the "Setting" item */
+  margin-top: auto;
+}
+
+/* Active state for the sidebar menu item */
+.sidebar-menu-item.active-item {
+  background-color: var(--secondary-30);
+  /* Set background to secondary */
+  color: var(--primary-10);
+  /* Set text to primary */
+}
+
+/* Icon color adjustment for active item */
+.sidebar-menu-item.active-item .sidebar-menu-icon {
+  color: var(--primary-10);
+  /* Set icon color to primary when active */
+}
+
+
+/* Styling untuk overlay konfirmasi */
+.overlay-logout-admin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--secondary-10), 0.5);
+  /* Transparan hitam dengan warna dari vars.css */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.overlay-content-logout-admin {
+  background-color: var(--primary-10);
+  /* Warna latar belakang dari vars.css */
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Tambahkan bayangan untuk konten */
+}
+
+.overlay-buttons-logout-admin {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn-yes-logout-admin,
+.btn-no-logout-admin {
+  padding: 10px 20px;
+  font-size: var(--navbar-1-semibold-16-font-size);
+  /* Menggunakan font size dari vars.css */
+  font-family: var(--navbar-1-semibold-16-font-family);
+  /* Menggunakan font family dari vars.css */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-yes-logout-admin {
+  background-color: red;
+  /* Warna dari vars.css */
+  color: var(--textcolor-100);
+  /* Teks menggunakan warna dari vars.css */
+}
+
+.btn-no-logout-admin {
+  border: 2px solid;
+  /* Warna dari vars.css */
+  color: var(--textcolor-100);
+  /* Teks menggunakan warna dari vars.css */
+}
+
+/* Efek hover untuk tombol */
+.btn-yes-logout-admin:hover {
+  color: var(--primary-10);
+  background-color: var(--secondary-40);
+}
+
+.btn-no-logout-admin:hover {
+  color: var(--primary-10);
+  background-color: var(--secondary-40);
+}

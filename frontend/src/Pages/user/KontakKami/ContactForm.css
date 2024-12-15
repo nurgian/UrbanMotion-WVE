@@ -1,0 +1,304 @@
+/* Header Title */
+.form-KontakKami .header-title-form-KontakKami {
+  display: flex;
+  /* Aktifkan flexbox */
+  justify-content: center;
+  /* Pusatkan secara horizontal */
+  align-items: center;
+  /* Pusatkan secara vertikal jika ada tinggi */
+  text-align: center;
+  /* Pastikan teks berada di tengah */
+  color: var(--primary-10);
+  font-family: var(--headline-2-bold-35-font-family);
+  font-size: var(--headline-2-bold-35-font-size);
+  font-weight: var(--headline-2-bold-35-font-weight);
+  height: var(--headline-2-bold-35-line-height);
+}
+
+/* Subtitle */
+.subtitle-form-KontakKami {
+  color: #6e6e6e;
+  text-align: left;
+  font-family: var(--paragraf-2-reguler-18-font-family, "OpenSans-Regular", sans-serif);
+  font-size: var(--paragraf-2-reguler-18-font-size, 18px);
+  line-height: var(--paragraf-2-reguler-18-line-height, 32px);
+  font-weight: var(--paragraf-2-reguler-18-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+
+/* Form */
+.form-KontakKami {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Row */
+.row-KontakKami {
+  display: flex;
+  gap: 20px;
+  /* Jarak antar field dalam satu baris */
+  width: 100%;
+}
+
+/* Form Field */
+.row-KontakKami .form-field-KontakKami {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  flex: 1;
+  /* Agar masing-masing field mengisi ruang secara proporsional */
+}
+
+/* Label */
+.label-KontakKami {
+  color: #2d2d2d;
+  text-align: left;
+  font-family: var(--form-label-font-family, "OpenSans-SemiBold", sans-serif);
+  font-size: var(--form-label-font-size, 17px);
+  line-height: var(--form-label-line-height, 29px);
+  font-weight: var(--form-label-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+
+/* Input Field */
+.input-field-KontakKami {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Input Text */
+.input-text-KontakKami {
+  color: #6e6e6e;
+  text-align: left;
+  font-family: var(--body-small-font-family, "OpenSans-Regular", sans-serif);
+  font-size: var(--body-small-font-size, 15px);
+  font-weight: var(--body-small-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+
+/* Text Area */
+.input-field-message-KontakKami {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  /* Full width */
+  min-height: 100px;
+  /* Minimum height */
+  box-sizing: border-box;
+  /* Ensures padding doesn't add extra width */
+  resize: vertical;
+  /* Allows resizing the height of the textarea */
+}
+
+/* Submit Button */
+.submit-button-KontakKami {
+  background-color: var(--primary-10);
+  border-radius: 50px;
+  padding: 12x 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  color: #f8f3ed;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button-KontakKami:hover {
+  scale: 1.01;
+}
+
+/* Responsif untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+  .form-KontakKami {
+    padding: 15px;
+    /* Mengurangi padding */
+    max-width: 90%;
+    /* Lebar maksimal 90% */
+  }
+
+  .header-title-form-KontakKami {
+    font-size: 24px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 16px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column;
+    /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%;
+    /* Pastikan field mengisi lebar penuh */
+  }
+
+  .submit-button-KontakKami {
+    padding: 12px 20px;
+    /* Mengurangi padding pada tombol */
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+  }
+}
+
+/* Responsif untuk layar dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+  .form-KontakKami {
+    padding: 10px;
+    /* Mengurangi padding */
+    max-width: 95%;
+    /* Lebar maksimal 95% */
+  }
+
+  .header-title-form-KontakKami {
+    font-size: 20px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+    line-height: 20px;
+    /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column;
+    /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%;
+    /* Pastikan field mengisi lebar penuh */
+  }
+
+  .input-field-message-KontakKami {
+    min-height: 80px;
+    /* Mengurangi tinggi minimum textarea */
+  }
+
+  .submit-button-KontakKami {
+    padding: 10px 15px;
+    /* Mengurangi padding pada tombol */
+    font-size: 12px;
+    /* Ukuran font lebih kecil */
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .form-KontakKami {
+    padding: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    /* Menjaga agar form berada di tengah horisontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Memastikan isi form terpusat secara horisontal */
+    justify-content: center;
+    /* Memastikan isi form terpusat secara vertikal */
+  }
+
+  .header-title-form-KontakKami {
+    font-size: 24px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 16px;
+    /* Ukuran font lebih kecil */
+    line-height: 24px;
+    /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column;
+    /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%;
+    /* Pastikan field mengisi lebar penuh */
+  }
+
+  .submit-button-KontakKami {
+    padding: 12px 20px;
+    /* Mengurangi padding pada tombol */
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+  }
+}
+
+/* Responsif untuk layar dengan lebar maksimal 480px */
+@media (max-width: 480px) {
+  .form-KontakKami {
+    padding: 10px;
+    /* Mengurangi padding */
+    max-width: 95%;
+    /* Lebar maksimal 95% */
+  }
+
+  .form-KontakKami .header-title-form-KontakKami {
+    font-size: 20px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .subtitle-form-KontakKami {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+    line-height: 20px;
+    /* Mengurangi line-height */
+  }
+
+  .row-KontakKami {
+    flex-direction: column;
+    /* Mengubah menjadi kolom */
+  }
+
+  .row-KontakKami .form-field-KontakKami {
+    width: 100%;
+    /* Pastikan field mengisi lebar penuh */
+  }
+
+  .input-field-message-KontakKami {
+    min-height: 80px;
+    /* Mengurangi tinggi minimum textarea */
+  }
+
+  .submit-button-KontakKami {
+    padding: 10px 15px;
+    /* Mengurangi padding pada tombol */
+    font-size: 12px;
+    /* Ukuran font lebih kecil */
+  }
+}

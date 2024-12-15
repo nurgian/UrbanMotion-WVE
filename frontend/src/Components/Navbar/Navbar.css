@@ -1,0 +1,300 @@
+/* Navbar Container */
+.navbar-container {
+  background-color: var(--primary-10);
+  padding: 14px 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 79px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Shadow Effect */
+.navbar-container.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+
+/* Navbar Logo */
+.navbar-logo {
+  justify-content: flex-start;
+  width: 103px;
+}
+
+.navbar-logo img {
+  max-width: 100%;
+  /* Logo akan menyesuaikan lebar kontainer */
+  height: auto;
+  /* Menjaga proporsi logo */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 49px;
+}
+
+.navbar-item {
+  padding: 4px 10px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggle {
+  background: var(--primary-10);
+  display: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  /* Position the toggle button at the top right */
+  right: 20px;
+  /* Adjust distance from the right */
+  top: 50%;
+  /* Vertically center the button */
+  transform: translateY(-50%);
+}
+
+/* Navbar Item Text */
+.navbar-item-text {
+  font-family: var(--navbar-1-semibold-16-font-family);
+  font-size: var(--navbar-1-semibold-16-font-size);
+  line-height: var(--navbar-1-semibold-16-line-height);
+  font-weight: var(--navbar-1-semibold-16-font-weight);
+  color: var(--textcolor-30);
+}
+
+.navbar-item.active {
+  background-color: white;
+}
+
+.navbar-item.active .navbar-item-text {
+  color: var(--textcolor-10);
+}
+
+.dropdown-icon {
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  background-color: var(--primary-10);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 200px;
+  z-index: 50;
+}
+
+.dropdown-item {
+  color: white;
+  background-color: var(--primary);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: var(--primary);
+}
+
+/* Default: login button outside menu on desktop */
+.login-button {
+  background-color: var(--textcolor-30);
+  padding: 4px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button-text {
+  color: var(--primary-10);
+  font-family: var(--navbar-1-semibold-16-font-family);
+  font-size: var(--navbar-1-semibold-16-font-size);
+  line-height: var(--navbar-1-semibold-16-line-height);
+  font-weight: var(--navbar-1-semibold-16-font-weight);
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  .navbar-logo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .navbar-logo img {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-items: center;
+    /* Ukuran logo di layar lebih kecil */
+  }
+
+  .navbar-container {
+    padding: 10px;
+  }
+
+  /* Mengubah ikon toggle menu */
+  .navbar-toggle {
+    font-size: 28px;
+    /* Ukuran ikon toggle sedikit lebih kecil di tablet */
+    display: block;
+  }
+
+  /* Mengatur agar navbar links tetap tersembunyi di layar tablet dan dapat discroll */
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    margin-top: 15px;
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    /* Menambahkan scroll jika menu lebih banyak */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-10);
+    /* Menambahkan latar belakang putih untuk menu */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow pada menu dropdown */
+    z-index: 10;
+    display: none;
+    transition: all 0.3s ease;
+    /* Transisi untuk menu muncul */
+  }
+
+  /* Tampilkan menu ketika toggle dibuka */
+  .navbar-links.open {
+    display: block;
+  }
+
+  /* Navbar item dan dropdown */
+  /* Navbar item dan dropdown */
+  .navbar-item {
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-item-text {
+    font-size: 16px;
+    /* Ukuran font diubah untuk keterbacaan yang lebih baik di tablet */
+    padding: 10px;
+    margin: 0;
+  }
+
+  .dropdown-item {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Efek hover pada item dropdown */
+  .dropdown-item:hover {
+    background-color: var(--primary-10);
+    /* Latar belakang item dropdown saat hover */
+  }
+
+  .dropdown-menu {
+    position: relative;
+    background-color: var(--primary-10);
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Menampilkan dropdown saat menu transportasi umum di hover */
+  .navbar-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Login button */
+  .login-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* Extra Small Screens (Mobile) */
+@media (max-width: 480px) {
+
+  .navbar-logo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .navbar-container .navbar-logo img {
+    width: 40%;
+    /* Ukuran logo di layar lebih kecil */
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .navbar-toggle {
+    font-size: 30px;
+    /* Larger toggle icon for small screens */
+  }
+
+  .navbar-item-text {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    /* Smaller font size for mobile */
+  }
+}
+
+/* Desktop styles: Ensure login button is visible */
+@media (min-width: 769px) {
+  .navbar-toggle {
+    display: none;
+    /* Hide toggle button on desktop */
+  }
+
+  .login-button.desktop-visible {
+    display: block;
+    /* Show login button on desktop */
+  }
+}

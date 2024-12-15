@@ -1,0 +1,332 @@
+/* Container styles */
+.register {
+  margin: 0;
+  padding: 0;
+}
+
+.register .container {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Left section */
+.register .left {
+  flex: 1;
+  background: linear-gradient(var(--primary-10), var(--primary-20));
+  color: var(--textcolor-30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.1);
+  /* Shadow for left side */
+}
+
+.register .left .logo {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  /* Shadow for logo */
+}
+
+/* Right section */
+.register .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  /* margin-left: 100px;
+  margin-right: -100px; */
+}
+
+/* Form styles */
+.register .right .login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  /* Shadow for form */
+  background-color: #f9f9f9;
+}
+
+.register .right .login-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--textcolor-10);
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.register .right .login-form p {
+  font-size: 14px;
+  color: var(--textcolor-50);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register .right .login-form label {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.register .right .login-form input[type="text"],
+.register .right .login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.register .right .login-form input:focus {
+  border-color: var(--primary-10);
+}
+
+/* Styling untuk checkbox dan label yang rata kiri */
+.register .container .right .login-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: var(--textcolor-50);
+  /* Gunakan warna teks yang lebih lembut */
+}
+
+.register .container .right .login-form .checkbox-label input {
+  margin-top: 0px;
+  margin-right: 15px;
+  /* Memberikan jarak antara checkbox dan label */
+  width: auto;
+  /* Agar lebar checkbox sesuai dengan ukuran aslinya */
+}
+
+.register .container .right .login-form .checkbox-label label {
+  margin: 0;
+  /* Menghilangkan margin di label agar lebih rapat */
+  cursor: pointer;
+  /* Menambahkan pointer cursor agar terlihat bisa diklik */
+}
+
+/* Button styles */
+button#registerButton {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-10);
+  color: var(--textcolor-70);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register .right .register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register .right .register a {
+  color: var(--primary-10);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register .right .register a {
+  color: var(--primary-20);
+}
+
+/* Google login button */
+.register .right .google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.register .right .google-login:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  /* Shadow effect for google login on hover */
+}
+
+.register .right .google-login img {
+  margin-right: 15px;
+}
+
+/* Popup overlay */
+
+/* Pop-up Styles */
+.register .popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.register .popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.register .popup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.register .popup button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: var(--primary-10);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -3;
+  /* margin-bottom: 10px; */
+  display: block;
+}
+
+/* Google Login Button */
+.register .right .google-login {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens (768px) */
+@media (max-width: 768px) {
+  .register .container {
+    flex-direction: column;
+  }
+
+  .register .left {
+    width: 100%;
+    height: 250px;
+  }
+
+  .register .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .register .right .login-form {
+    width: 90%;
+    max-width: none;
+    padding: 15px;
+  }
+
+  .register .right .login-form h2 {
+    font-size: 20px;
+  }
+
+  .register .right .login-form input,
+  .register .right .login-form button {
+    padding: 12px;
+  }
+
+  .register .right .register a {
+    font-size: 14px;
+  }
+
+  .register .right .google-login {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .register-form i {
+    color: white;
+  }
+}
+
+/* For mobile screens (480px) */
+@media (max-width: 480px) {
+  .register .container {
+    flex-direction: column;
+  }
+
+  .register .left {
+    width: 100%;
+    height: 200px;
+  }
+
+  .register .right .login-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .register .right .login-form h2 {
+    font-size: 18px;
+  }
+
+  .register .right .login-form input,
+  .register .right .login-form button {
+    padding: 10px;
+  }
+
+  .register .right .register a {
+    font-size: 12px;
+  }
+
+  .register .right .google-login {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  .register-form i {
+    color: white;
+  }
+}
+
+.custom-confirm-text {
+  background-color: #235347; /* Warna teks tombol, contoh: oranye */
+  font-weight: bold; /* Opsional: membuat teks lebih tebal */
+  border: none; /* Opsional: menghapus garis tepi */
+}

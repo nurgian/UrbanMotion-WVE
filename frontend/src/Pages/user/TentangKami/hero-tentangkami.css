@@ -1,0 +1,138 @@
+.hero-overlay-TentangKami {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+    url(/assets/images/bgheader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 271px 116px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.hero-content-TentangKami {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  /* Menambah kemampuan untuk elemen merespons */
+}
+
+.hero-text-TentangKami {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 773px;
+}
+
+.hero-text-TentangKami h1 {
+  color: var(--textcolor-30);
+  font-family: var(--headline-1-bold-55-font-family);
+  font-size: var(--headline-1-bold-55-font-size);
+  line-height: var(--headline-1-bold-55-line-height);
+  font-weight: var(--headline-1-bold-55-font-weight);
+  text-align: left;
+}
+
+.hero-content-TentangKami .hero-text-TentangKami p {
+  color: var(--textcolor-30);
+  font-family: var(--paragraf-2-reguler-18-font-family,
+      "OpenSans-Regular",
+      sans-serif);
+  font-size: var(--paragraf-2-reguler-18-font-size, 18px);
+  line-height: var(--paragraf-2-reguler-18-line-height, 32px);
+  font-weight: var(--paragraf-2-reguler-18-font-weight, 400);
+  flex: 1;
+}
+
+/* Responsive untuk 960px */
+@media (max-width: 960px) {
+  .hero-overlay-TentangKami {
+    padding: 200px 50px;
+    gap: 1.5rem;
+  }
+
+  .hero-content-TentangKami {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .hero-text-TentangKami {
+    width: 100%;
+  }
+
+  .hero-text-TentangKami h1 {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .hero-content-TentangKami .hero-text-TentangKami p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-overlay-TentangKami {
+    padding: 150px 20px;
+    gap: 1rem;
+  }
+
+  .hero-content-TentangKami {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hero-text-TentangKami {
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .hero-text-TentangKami h1 {
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .hero-content-TentangKami .hero-text-TentangKami p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+/* Tambahan untuk lebar layar yang lebih besar dari 960px */
+@media (min-width: 1200px) {
+  .hero-overlay-TentangKami {
+    padding: 271px 116px;
+    /* Ukuran standar */
+    gap: 2.5rem;
+  }
+
+  .hero-content-TentangKami {
+    gap: 60px;
+  }
+
+  .hero-text-TentangKami h1 {
+    font-size: var(--headline-1-bold-55-font-size);
+    line-height: var(--headline-1-bold-55-line-height);
+  }
+
+  .hero-content-TentangKami .hero-text-TentangKami p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
