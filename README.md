@@ -11,53 +11,62 @@ Sebelum memulai, pastikan Anda telah menginstal:
 
 ### 1. Clone Repositori
 Clone repositori ini ke komputer lokal Anda menggunakan git bash:
+```bash
     git clone <REPOSITORY_URL> 
     cd <REPOSITORY_NAME>
+```
 
 ### 2. Setup Backend 
 
 1. Buatlah database di MySQL dengan nama "car_rental"
 
 2. Masuk ke direktori backend di terminal:
+   ```bash
     cd backend
+   ```
 
-3. Instal Dependensi
-
+4. Instal Dependensi
     Jalankan perintah berikut untuk menginstal semua paket yang diperlukan:
+   ```bash
     npm install
+   ```
 
-4. Jalankan Migrasi dan Seed Database
+6. Jalankan Migrasi dan Seed Database
 
     Pastikan database Anda berjalan, lalu eksekusi perintah berikut:
     1. Jalankan Migrasi:
+       ```bash
         npm run migrate-up
+       ```
 
-    2. Seed Database:
+    3. Seed Database:
+       ```bash
         npm run seed-up
+       ```
         
-5. Jalankan Aplikasi
-
+7. Jalankan Aplikasi
     Setelah pengaturan selesai, Anda dapat memulai aplikasi dengan menjalankan:
-
+   ```bash
     npm run dev
+   ```
 
 ### 3. Setup Frontend 
 1. Masuk ke direktori frontend
-    
+    ```bash
     cd frontend
-
+    ```
 
 2. Instal Dependensi
-
     Jalankan perintah berikut untuk menginstal semua paket yang diperlukan:
-
+   ```bash
     npm install
+   ```
         
-3. Jalankan Aplikasi
-
+4. Jalankan Aplikasi
     Setelah pengaturan selesai, Anda dapat memulai aplikasi dengan menjalankan:
-
+   ```bash
     npm run dev
+   ```
 
 
 ### 4. Akses Aplikasi
