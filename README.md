@@ -12,8 +12,8 @@ Sebelum memulai, pastikan Anda telah menginstal:
 ### 1. Clone Repositori
 Clone repositori ini ke komputer lokal Anda menggunakan git bash:
 ```bash
-    git clone <REPOSITORY_URL> 
     cd <REPOSITORY_NAME>
+    git clone <REPOSITORY_URL> 
 ```
 
 ### 2. Setup Backend 
