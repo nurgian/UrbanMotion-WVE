@@ -86,7 +86,7 @@ const list_lrt = [
   {
     id: 3,
     name: "rasuna said",
-    asset: "/assets/images/Image lrt/rassuna said/1.png",
+    asset: "/assets/images/Image lrt/rasuna said/1.png",
   },
   {
     id: 4,
@@ -287,14 +287,15 @@ const MrtLrt = () => {
                         <button className="border-none bg-white">
                           <img
                             src="/assets/images/Image Mrt/cipete raya/1-1.png"
-                            alt="Stasiun MRT Cipete Raya"
+                            alt="Stasiun MRT Fatamawati Indomaret"
                             className="w-120 h-120 object-cover rounded-lg shadow-lg"
-                            onClick={() => openModal("cipeteraya", "mrt")}
+                            onClick={() => openModal("cipete raya", "mrt")}
                           />
                         </button>
                       </div>
                     </div>
                   </div>
+
 
                   {/* Card 4 */}
                   <div className="swiper-slide-mrt flex-shrink-0 px-2">
@@ -554,7 +555,7 @@ const MrtLrt = () => {
                         <button className="border-none bg-white">
                           <img
                             src="/assets/images/Image lrt/rasuna said/1-1.png"
-                            alt="Stasiun LRT Rasuna Said"
+                            alt="Stasiun LRT Setia Budi"
                             className="w-120 h-120 object-cover rounded-lg shadow-lg"
                             onClick={() => openModal("rasuna said", "lrt")}
                           />
@@ -733,16 +734,19 @@ const MrtLrt = () => {
         </div>
       </div>
       {/* RouteOverlay Component */}
+      
       <RouteOverlay
         isOpen={isOverlayOpen}
         toggleOverlay={closeOverlay}
-        imagePath={overlayImage} // Gambar rute sesuai tombol
+        imagePath="/assets/images/Peta Rute/Peta Rute MRT.jpg" // Gambar rute untuk tombol "Lihat Rute"
       />
+     
       <Modal
         isOpen={isOpenModal}
         toggleOverlay={closeModal}
         imagePath={type === "mrt" ? mrt?.[0]?.asset : type === "lrt" ? lrt?.[0]?.asset : null}
       />
+      
     </>
   );
 };
